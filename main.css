@@ -1,0 +1,60 @@
+﻿header {
+    background: url("imgs/headerbg.jpeg") no-repeat center fixed;
+    background-size: cover;    
+}
+#header{
+    padding-top: 2vh;
+    padding-bottom: 8vh;
+    
+}
+
+nav{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 1vh;
+}
+
+nav ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+
+/*background-color: #beffaa;*/
+}
+
+nav li {
+float: right;
+}
+
+nav li a {
+display: block;
+color: rgb(39, 100, 39);
+text-align: center;
+padding: 1em 1.2em;
+text-decoration: none;
+}
+
+nav li a:hover {
+background-color: #69f055;
+}
+
+#logo{
+    padding-left: 1%;
+    width: 5%;
+    float: left;
+}
+
+#top{
+    text-align: center;
+    font-size: 5em;
+    color: darkgreen;
+}
+footer{
+    background-color: green;
+    width: 100%;
+    left: 0px;
+    bottom: 0px;
+    text-align: center;
+    position: fixed;
+}
