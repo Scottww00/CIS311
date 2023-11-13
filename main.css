@@ -8,34 +8,29 @@
     */
 
 
-header {
-    background: url("imgs/headerbg.jpeg") no-repeat center fixed;
-    background-size: cover;
+figure img{
+    vertical-align: top;
+}
+figcaption{
+    text-align: center;
 }
 
-#header {
-    padding-top: 2vh;
-    padding-bottom: 8vh;
 
-}
 
 nav {
     position: -webkit-sticky;
     position: sticky;
     top: 1vh;
+    width: 100%;
 }
 
 nav ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    text-align: center;
     overflow: hidden;
-
+    padding-inline-start: 0;
 }
 
-nav li {
-    float: right;
-}
 
 nav li a {
     display: block;
@@ -55,11 +50,7 @@ nav li a:hover {
     float: left;
 }
 
-#top {
-    text-align: center;
-    font-size: 5em;
-    color: darkgreen;
-}
+
 
 #content {
     padding-bottom: 2.5rem;
@@ -81,11 +72,140 @@ footer {
 
 
 
-.pics {
-    padding: .5%;
-    float: left;
-}
+
 
 .center {
     text-align: center;
 }
+
+
+/* Phones: */
+@media only screen and (max-width: 700px){
+    header{
+        background-color: #e6e8cd;
+    }
+    .noMobile{
+        display: none;
+    }
+    .mobileOnly{
+        display: inherit;
+    }
+    .pics{
+        width: 100%;
+    }
+
+    nav li {
+        float: center;
+    }
+
+    #top{
+        color: darkgreen;
+        text-align:center;
+        margin-top: 0;
+        font-size: 3em;
+    }
+    footer{
+        border-radius: 15px;  /*rounded element!!! */
+    }
+    .contact{
+        text-align: center;
+        background-color: #69f055;
+        width: 100%;
+        border-radius: 10px;
+        float:center;
+    }
+    aside{
+        width: 100%;
+    }
+    figure{
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    /* Tablets: */
+    header{
+        background-color: #e6e8cd;
+    }
+    .noMobile{
+        display: none;
+    }
+    .mobileOnly{
+        display: inherit;
+    }
+    nav li {
+        float:left;
+        width: 25%;
+    }
+    #header {
+    padding-top: 2vh;
+    padding-bottom: 8vh;
+
+    }
+    #top {
+        text-align: center;
+        font-size: 5em;
+        color: darkgreen;
+    }
+    .pics{
+        float: left
+    }
+    .contact{
+        text-align: center;
+        background-color: #69f055;
+        width: 48%;
+        margin: 1%;
+        border-radius: 10px;
+        float:left;
+        box-shadow: .5em .5em #e6e8cd;
+    }
+    aside{
+        width: 100%;
+    }
+    figure{
+        display: inline-block;
+        width: min-content;
+    }
+}
+  
+@media only screen and (min-width: 1024px) {
+    /* Desktop: */
+    header {
+        background: url("imgs/headerbg.jpeg") no-repeat center fixed;
+        background-size: cover;
+    }
+    .noMobile{
+        display: inherit;
+    }
+    .mobileOnly{
+        display: none;
+    }
+    nav li {
+        float:right;
+        width: auto;
+    }
+    #header {
+    padding-top: 2vh;
+    padding-bottom: 8vh;
+
+    }
+    #top {
+        text-align: center;
+        font-size: 5em;
+        color: darkgreen;
+    }
+    .pics {
+        padding: .5%;
+        float: left;
+    }
+    aside{
+        float: right;
+        width: 42%;
+    }
+    figure{
+        display: inline-block;
+        width: min-content;
+    }
+}
+
