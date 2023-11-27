@@ -19,6 +19,11 @@ table{  /* table css for homework 4 */
     text-align: center;
 }
 
+button{
+    background-color: transparent;
+    border: none;
+    float:right;
+}
 
 nav {
     position: -webkit-sticky;
@@ -86,6 +91,8 @@ footer {
 @media only screen and (max-width: 700px){
     header{
         background-color: #e6e8cd;
+        padding-top: 0.5em;
+        min-height: 4em;
     }
     .noMobile{
         display: none;
@@ -106,6 +113,7 @@ footer {
         text-align:center;
         margin-top: 0;
         font-size: 3em;
+        float: left;
     }
     footer{
         border-radius: 15px;  /*rounded element!!! */
@@ -123,6 +131,14 @@ footer {
     figure{
         width: 100%;
         margin: 0;
+    }
+    #menu{
+        display: none;
+        clear: both;
+    }
+    #hamburger{
+        height: 3em;
+        transform: rotate(180deg);  /* this is the transform for HW5*/
     }
 }
 
